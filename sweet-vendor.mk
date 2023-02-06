@@ -1136,6 +1136,9 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libthermalclient \
+    fm_helium \
+    libfm-hci \
+    vendor.qti.hardware.fm@1.0_system_ext \
     CneApp \
     ConnectionSecurityService \
     IWlanService \
