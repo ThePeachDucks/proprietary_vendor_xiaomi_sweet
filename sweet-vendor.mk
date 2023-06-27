@@ -6,17 +6,28 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/sweet
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/sweet/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/xiaomi/sweet/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/xiaomi/sweet/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/xiaomi/sweet/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/xiaomi/sweet/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
     vendor/xiaomi/sweet/proprietary/vendor/bin/embmsslServer:$(TARGET_COPY_OUT_VENDOR)/bin/embmsslServer \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/xiaomi/sweet/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-qti \
     vendor/xiaomi/sweet/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/xiaomi/sweet/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/xiaomi/sweet/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/xiaomi/sweet/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/xiaomi/sweet/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-service \
     vendor/xiaomi/sweet/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/xiaomi/sweet/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/xiaomi/sweet/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
@@ -24,7 +35,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
     vendor/xiaomi/sweet/proprietary/vendor/bin/init.qti.qcv.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.qcv.sh \
     vendor/xiaomi/sweet/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/mi_thermald:$(TARGET_COPY_OUT_VENDOR)/bin/mi_thermald \
     vendor/xiaomi/sweet/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/nv_mac:$(TARGET_COPY_OUT_VENDOR)/bin/nv_mac \
     vendor/xiaomi/sweet/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
     vendor/xiaomi/sweet/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/xiaomi/sweet/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
@@ -39,13 +52,47 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/bin/qtisetprop:$(TARGET_COPY_OUT_VENDOR)/bin/qtisetprop \
     vendor/xiaomi/sweet/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
     vendor/xiaomi/sweet/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
     vendor/xiaomi/sweet/proprietary/vendor/bin/shsusrd:$(TARGET_COPY_OUT_VENDOR)/bin/shsusrd \
     vendor/xiaomi/sweet/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
+    vendor/xiaomi/sweet/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/xiaomi/sweet/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/xiaomi/sweet/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
     vendor/xiaomi/sweet/proprietary/vendor/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdhdcphalservice \
     vendor/xiaomi/sweet/proprietary/vendor/bin/wfdvndservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdvndservice \
     vendor/xiaomi/sweet/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/CFR_para_MARCO_V01.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_MARCO_V01.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/CFR_para_UW_V01.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_UW_V01.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/CFR_para_W_V01.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_W_V01.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/CFR_para_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_config.xml \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/LDC_FPC_TUNING_DATA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/LDC_FPC_TUNING_DATA.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/Miui-Light.ttf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Miui-Light.ttf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/almalence_sr_params_tele.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/almalence_sr_params_tele.config \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/almalence_sr_params_wide.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/almalence_sr_params_wide.config \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/back_dual_camera_caldata_wt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/back_dual_camera_caldata_wt.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/beauty_ui9_intelligent_params.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beauty_ui9_intelligent_params.config \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/com.xiaomi.dcal.wd.golden.108m:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wd.golden.108m \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/com.xiaomi.dcal.wd.golden.64m:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wd.golden.64m \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/com.xiaomi.dcal.wu.fake:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wu.fake \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/com.xiaomi.dcal.wu.golden.108m:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wu.golden.108m \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/com.xiaomi.dcal.wu.golden.64m:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wu.golden.64m \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/eisoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eisoverridesettings.txt \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/eyelineblush.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eyelineblush.cng \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/golden_rear_dc_cal_wu.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/golden_rear_dc_cal_wu.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/hdr_ui9_params.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hdr_ui9_params.config \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/lf_facerank_model.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lf_facerank_model.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/mibokeh_712_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_712_opencl.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/mibokeh_712_parameter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_712_parameter.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/sr_params.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr_params.xml \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/vidhance_calibration_108m:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration_108m \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/vidhance_calibration_64m:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration_64m \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/camera/watermark_font_2300_3199.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/watermark_font_2300_3199.dat \
     vendor/xiaomi/sweet/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/xiaomi/sweet/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
     vendor/xiaomi/sweet/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -79,8 +126,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/xiaomi/sweet/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/xiaomi/sweet/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
     vendor/xiaomi/sweet/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/hdr_config.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_config.cfg \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
@@ -92,9 +143,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/init/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mi_thermald.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
@@ -103,21 +157,125 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-sscrpc-service.rc \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/sweet/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sdr_config.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sdr_config.cfg \
     vendor/xiaomi/sweet/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/xiaomi/sweet/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/xiaomi/sweet/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/xiaomi/sweet/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/xiaomi/sweet/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/adux1050_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/adux1050_0.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/bu27030_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bu27030_0.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dso_0.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sm7150_adux1050_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7150_adux1050_0.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sm7150_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7150_ak991x_0.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sm7150_bu27030_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7150_bu27030_0.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sm7150_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7150_icm4x6xx_0.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sm7150_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7150_lsm6dso_0.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sm7150_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7150_power_0.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sm7150_tsl2540.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7150_tsl2540.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_aod.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aod.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_basic_gestures.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_basic_gestures.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_bring_to_ear.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_bring_to_ear.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_ccd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_device_orient.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_device_orient.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_distance_bound.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_distance_bound.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_dpc.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dpc.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_facing.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_facing.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_fmv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_multishake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_multishake.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_nonui.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_nonui.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_pedometer.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_pedometer.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_sar_algo_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_sar_algo_0.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_sar_algo_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_sar_algo_1.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/config/tsl2540.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tsl2540.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/judge_calibrated.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/judge_calibrated.json \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermal-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermal-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-mgame.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermal-navigation.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-navigation.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermal-nolimits.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-nolimits.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermal-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-normal.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermal-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-phone.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermal-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-video.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermal-youtube.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-youtube.conf \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/sweet/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/a615_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.b00 \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/a615_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.b01 \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/a615_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.b02 \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/a615_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.elf \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/a615_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.mdt \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/a618_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a618_gmu.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/aw8624_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8624_haptic.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/aw8624_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8624_rtp.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/awinic/aw882xx_pid_1852_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic/aw882xx_pid_1852_acf.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/awinic/aw882xx_pid_1852_monitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic/aw882xx_pid_1852_monitor.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/awinic/aw882xx_pid_2032_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic/aw882xx_pid_2032_acf.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/awinic/aw882xx_pid_2032_monitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic/aw882xx_pid_2032_monitor.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/awinic/aw882xx_rcv_reg_l.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic/aw882xx_rcv_reg_l.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/awinic/aw882xx_rcv_reg_r.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic/aw882xx_rcv_reg_r.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/awinic/aw882xx_spk_reg_l.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic/aw882xx_spk_reg_l.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/awinic/aw882xx_spk_reg_r.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic/aw882xx_spk_reg_r.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/drv2604.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/drv2604.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b03 \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/k6_test_limits_test_sensor_1.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/k6_test_limits_test_sensor_1.csv \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/osc_rtp_24K_5s.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/osc_rtp_24K_5s.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/vibrator_firmware_aidl/0_click_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vibrator_firmware_aidl/0_click_P_RTP.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/vibrator_firmware_aidl/1_doubelClick_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vibrator_firmware_aidl/1_doubelClick_P_RTP.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/vibrator_firmware_aidl/2_tick_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vibrator_firmware_aidl/2_tick_P_RTP.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/vibrator_firmware_aidl/3_thud_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vibrator_firmware_aidl/3_thud_P_RTP.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/vibrator_firmware_aidl/4_pop_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vibrator_firmware_aidl/4_pop_P_RTP.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/vibrator_firmware_aidl/5_heavyClick_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vibrator_firmware_aidl/5_heavyClick_P_RTP.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/wigig/wigig.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wigig/wigig.ini \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/hw/audio.primary.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.sm6150.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.dsi.ant@1.0-impl.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
@@ -137,12 +295,29 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libOmxVpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVpp.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/liba2dpoffload.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_log_utils.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libaudioroute_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioroute_ext.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libbluetooth_audio_session_qti_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti_2_1.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp1prov.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp2p2prov.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcpsrm.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libhdmiedid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmiedid.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfp.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so \
@@ -163,8 +338,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/librice.so:$(TARGET_COPY_OUT_VENDOR)/lib/librice.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libsndmonitor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsndmonitor.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libsoc_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoc_helper.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libsoc_helper_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoc_helper_jni.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/libspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspkrprot.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppclient.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libvppimmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppimmotion.so \
@@ -190,8 +370,135 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libwfduibcsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrc_proprietary.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libwfduibcsrcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrcinterface_proprietary.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdutils_proprietary.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_HD.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/dirac_resource.dar:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/dirac_resource.dar \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libVC1Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1Dec.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1DecDsp_skel.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapps_mem_heap.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libcamera_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcamera_nn_skel.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libcvpdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcvpdsp_skel.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libdirac-capiv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdirac-capiv2.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdsp_streamer_add_constant.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdsp_streamer_binning.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdsp_streamer_skel.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvdsp_skel.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhexagon_nn_skel.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel_secondary.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhexagon_nn_skel_secondary.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/misound_karaoke_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_karaoke_res.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/misound_karaokemix_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_karaokemix_res.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_headphone.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/rfsa/adsp/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_spk.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/soundfx/libmisoundfx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmisoundfx.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib/vndk/libxlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libxlog.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensor.sweet_gc02m1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.sweet_gc02m1.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensor.sweet_imx355.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.sweet_imx355.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensor.sweet_imx471_front.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.sweet_imx471_front.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensor.sweet_ov02b1b.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.sweet_ov02b1b.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensor.sweet_ov5675_macro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.sweet_ov5675_macro.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensor.sweet_s5kgw3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.sweet_s5kgw3.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensor.sweet_s5khm2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.sweet_s5khm2.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensormodule.sweet_ofilm_imx355_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sweet_ofilm_imx355_ultra.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensormodule.sweet_ofilm_imx471_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sweet_ofilm_imx471_front.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensormodule.sweet_ofilm_ov02b1b.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sweet_ofilm_ov02b1b.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensormodule.sweet_ofilm_ov5675_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sweet_ofilm_ov5675_macro.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensormodule.sweet_ofilm_s5kgw3.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sweet_ofilm_s5kgw3.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensormodule.sweet_ofilm_s5khm2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sweet_ofilm_s5khm2.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensormodule.sweet_sunny_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sweet_sunny_gc02m1.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensormodule.sweet_sunny_imx355_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sweet_sunny_imx355_ultra.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensormodule.sweet_sunny_imx471_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sweet_sunny_imx471_front.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensormodule.sweet_sunny_ov5675_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sweet_sunny_ov5675_macro.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensormodule.sweet_sunny_s5kgw3.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sweet_sunny_s5kgw3.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.sensormodule.sweet_sunny_s5khm2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sweet_sunny_s5khm2.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.tuned.sweet_ofilm_imx355_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sweet_ofilm_imx355_ultra.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.tuned.sweet_ofilm_imx471_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sweet_ofilm_imx471_front.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.tuned.sweet_ofilm_ov02b1b_depth.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sweet_ofilm_ov02b1b_depth.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.tuned.sweet_ofilm_ov5675_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sweet_ofilm_ov5675_macro.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5khm2_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sweet_ofilm_s5khm2_wide.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.tuned.sweet_sunny_gc02m1_depth.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sweet_sunny_gc02m1_depth.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.tuned.sweet_sunny_imx355_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sweet_sunny_imx355_ultra.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.tuned.sweet_sunny_imx471_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sweet_sunny_imx471_front.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.tuned.sweet_sunny_ov5675_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sweet_sunny_ov5675_macro.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5khm2_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sweet_sunny_s5khm2_wide.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.altek.node.depurple.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.altek.node.depurple.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.altek.node.distortioncorrection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.altek.node.distortioncorrection.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.arcsoft.node.capturebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.capturebokeh.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.arcsoft.node.deflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.deflicker.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.arcsoft.node.distortioncorrection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.distortioncorrection.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.arcsoft.node.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.hdr.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.arcsoft.node.hdrchecker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.hdrchecker.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.arcsoft.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.realtimebokeh.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.arcsoft.node.skinbeautifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.skinbeautifier.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.arcsoft.node.smoothtransition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.smoothtransition.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.arcsoft.node.superlowlightraw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.superlowlightraw.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.mi.node.aiasd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.mi.node.aiasd.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.addconstant.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.binning.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.depth.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummyrtb.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummysat.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv2.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv3.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.fcv.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.gpu.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.memcpy.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.remosaic.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.stich.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swregistration.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.node.watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.watermark.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.node.xiaomigenderage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.xiaomigenderage.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aec.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.af.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awb.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awbwrapper.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.haf.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.hafoverride.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.stats.localhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.localhistogram.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlib.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.aec.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.vidhance.node.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.node.eis.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.stats.aec_dmbr.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.visidon.node.clearshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.visidon.node.clearshot.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.xiaomi.node.mibokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.xiaomi.node.mibokeh.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.xiaomi.node.mifilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.xiaomi.node.mifilter.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.xiaomi.node.mifragment.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.xiaomi.node.mifragment.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.xiaomi.node.mimovie.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.xiaomi.node.mimovie.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/com.xiaomi.node.misegment.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.xiaomi.node.misegment.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/etc/morpho_lowlight4.0.xml:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/etc/morpho_lowlight4.0.xml \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/etc/visidon_clearshot_params.xml:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/etc/visidon_clearshot_params.xml \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/components/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libmmcamera_cac3.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
@@ -202,11 +509,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.2.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.3.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/deviceInfoServiceModule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/deviceInfoServiceModule.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.dsi.ant@1.0-impl.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/consumerir.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.sm6150.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/fingerprint.fpc.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.sm6150.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscmservice.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
@@ -222,6 +539,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/lib-uceservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-uceservice.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlacSwDec.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libFaceGrade.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFaceGrade.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
@@ -240,17 +558,55 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxQcelp13Dec.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libOmxVpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxVpp.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxWmaDec.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libPSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPSNPE.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libQTEEConnector_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_listener.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libVDClearShot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDClearShot.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libXMFD_AgeGender.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libXMFD_AgeGender.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/lib_sr_models.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_sr_models.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libalCFR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalCFR.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libalLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalLDC.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libalhLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalhLDC.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_distortion_correction.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_front.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_front.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_rear_t.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_rear_w.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libarcsoft_hta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hta.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libarcsoft_portrait_lighting.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_lighting.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libarcsoft_portrait_lighting_c.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_lighting_c.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libarcsoft_preview_deflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_preview_deflicker.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_super_night_raw.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libbeauty_face_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbeauty_face_interface.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcamera_dirty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_dirty.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcamera_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_scene.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov7.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcamxfdalgov8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov8.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdengine.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
@@ -261,27 +617,46 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_optical_zoom_control.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libdualcam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_video_optical_zoom.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libembmsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libembmsservice.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libft2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libft2vendor.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libhexagon_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_stub.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libhta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta_hexagon_runtime.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libhvx_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhvx_interface.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libmiai_portraitsupernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiai_portraitsupernight.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libmialgo_fs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_fs.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libmialgo_ie_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_ie_capture.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libmialgo_rfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_rfs.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libmialgo_sd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_sd.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libmialgo_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_utils.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libmialgoengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libmibokeh_712.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_712.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libmulticam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulticam_image_optical_zoom.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libmulticam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulticam_video_optical_zoom.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_nr_fusion.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libnetmgr_rmnet_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_rmnet_ext.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libnotifyaudiohal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnotifyaudiohal.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnpu.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
@@ -306,6 +681,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/librelight_only.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librelight_only.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-hal-qmi.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libril-qc-logger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-logger.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
@@ -314,16 +692,40 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmp.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsdk_sr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdk_sr.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsnpe_adsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_adsp.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsnpe_dsp_domains.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsnpe_dsp_domains_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_system.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v2.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsnpe_dsp_domains_v2_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v2_system.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libsoc_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoc_helper.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libsoc_helper_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoc_helper_jni.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libssccalapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssccalapi.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libsymphony-cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphony-cpu.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libultrasound.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libultrasound.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libvideofilter_only.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideofilter_only.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppclient.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libvppimmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppimmotion.so \
@@ -332,10 +734,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libxmi_hdr_checker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxmi_hdr_checker.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libxmi_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxmi_high_dynamic_range.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/libxml2_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml2_vendor.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/mibokeh_712_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/mibokeh_712_opencl.bin \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/sensors.elliptic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.elliptic.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/sensors.mius.proximity.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.mius.proximity.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/sensors.touch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.touch.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/unnhal-acc-adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-adreno.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/unnhal-acc-common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-common.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/unnhal-acc-hta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-hta.so \
@@ -351,6 +763,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.data.factory@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.3.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.mwqem@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.slm@1.0.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cacert@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
@@ -362,6 +776,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.data.lce@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.lce@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.embmssl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.embmssl@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so \
@@ -400,7 +815,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.slmadapter@1.0.so \
+    vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.soter@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callcapability@1.0.so \
@@ -433,5 +850,8 @@ PRODUCT_PACKAGES += \
     CACertService \
     CneApp \
     IWlanService \
+    SoterService \
     TimeService \
-    android.hardware.neuralnetworks@1.3-service-qti
+    audiosphere \
+    android.hardware.neuralnetworks@1.3-service-qti \
+    manifest_android.hardware.drm@1.3-service.widevine
